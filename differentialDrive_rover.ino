@@ -1,9 +1,9 @@
-#define echoPin 8
-#define trigPin 7
-#define pwmA 10 // left
-#define pwmB 11 // right
-#define enA 13 // left
-#define enB 12 // right
+const int echoPin = 2;
+const int trigPin = 3;
+const int pwmA = 6; // left
+const int pwmB = 9; // right
+const int enA = 5; // left
+const int enB = 10; // right
 
 long duration;
 int distance, dst;
@@ -97,6 +97,26 @@ void stop() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Inputs if using Nano:
+const int echoPin = 2;
+const int trigPin = 3;
+const int pwmA = 6; // left
+const int pwmB = 9; // right
+const int enA = 5; // left
+const int enB = 10; // right
+*/
+
+/*
+Inputs if using Uno:
+const int echoPin = 8;
+const int trigPin = 7;
+const int pwmA = 10; // left
+const int pwmB = 11; // right
+const int enA = 13; // left
+const int enB = 12; // right
+*/
 
 /*
 Inputs if using motor hat:
